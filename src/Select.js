@@ -16,7 +16,7 @@ import defaultMenuRenderer from './utils/defaultMenuRenderer';
 import Async from './Async';
 import AsyncCreatable from './AsyncCreatable';
 import Creatable from './Creatable';
-import Option from './Option';
+import SelectOption from './SelectOption';
 import Value from './Value';
 
 function stringifyValue (value) {
@@ -144,7 +144,7 @@ const Select = React.createClass({
 			onBlurResetsInput: true,
 			onCloseResetsInput: true,
 			openAfterFocus: false,
-			optionComponent: Option,
+			optionComponent: SelectOption,
 			pageSize: 5,
 			placeholder: 'Select...',
 			required: false,

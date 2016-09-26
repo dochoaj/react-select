@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-const Option = React.createClass({
+const SelectOption = React.createClass({
 	propTypes: {
 		children: React.PropTypes.node,
 		className: React.PropTypes.string,             // className (based on mouse position)
@@ -93,4 +93,4 @@ const Option = React.createClass({
 	}
 });
 
-export default Option;
+export default SelectOption;
