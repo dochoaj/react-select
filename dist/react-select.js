@@ -980,9 +980,9 @@ var Select = React.createClass({
 			}
 		}
 
-		var minWidth = inputProps.minWidth;
+		var minWidthProps = inputProps.minWidthProps;
 
-		var inputProperties = _objectWithoutProperties(inputProps, ['minWidth']);
+		var inputProperties = _objectWithoutProperties(inputProps, ['minWidthProps']);
 
 		if (!this.props.disabled) {
 			if (this.props.searchable) {
@@ -1001,6 +1001,13 @@ var Select = React.createClass({
 				' '
 			);
 		}
+
+		var _input$props = input.props;
+		var minWidth = _input$props.minWidth;
+
+		var newInputProps = _objectWithoutProperties(_input$props, ['minWidth']);
+
+		input.props = newInputProps;
 
 		return React.createElement(
 			'div',

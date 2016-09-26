@@ -884,7 +884,7 @@ var Select = React.createClass({
 			}
 		}
 
-		const { minWidth, ...inputProperties } = inputProps;
+		const { minWidthProps, ...inputProperties } = inputProps;
 
 		if (!this.props.disabled) {
 			if (this.props.searchable) {
@@ -895,6 +895,9 @@ var Select = React.createClass({
 		} else if (!this.props.multi || !this.state.values.length) {
 			input = <div className="Select-input">&nbsp;</div>;
 		}
+
+		const { minWidth, ...newInputProps } = input.props;
+		input.props = newInputProps;
 
 		return (
 			<div ref="wrapper" className={selectClass}>
