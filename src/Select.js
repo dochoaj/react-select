@@ -897,7 +897,6 @@ var Select = React.createClass({
 		}
 
 		const { minWidth, ...newInputProps } = input.props;
-		delete input.props;
 
 		Object.defineProperty(input, 'props', {
 			value: newInputProps,

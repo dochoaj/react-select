@@ -1118,8 +1118,6 @@ var Select = React.createClass({
 
 		var newInputProps = _objectWithoutProperties(_input$props, ['minWidth']);
 
-		delete input.props;
-
 		Object.defineProperty(input, 'props', {
 			value: newInputProps,
 			writable: true
