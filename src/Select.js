@@ -897,7 +897,12 @@ var Select = React.createClass({
 		}
 
 		const { minWidth, ...newInputProps } = input.props;
-		input.props = newInputProps;
+		delete input.props;
+
+		Object.defineProperty(input, 'props', {
+			value: newInputProps,
+			writable: true
+		});
 
 		return (
 			<div ref="wrapper" className={selectClass}>
