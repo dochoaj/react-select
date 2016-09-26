@@ -896,13 +896,6 @@ var Select = React.createClass({
 			input = <div className="Select-input">&nbsp;</div>;
 		}
 
-		const { minWidth, ...newInputProps } = input.props;
-
-		Object.defineProperty(input, 'props', {
-			value: newInputProps,
-			writable: true
-		});
-
 		return (
 			<div ref="wrapper" className={selectClass}>
 				<input type="hidden" ref="value" name={this.props.name} value={this.state.value} disabled={this.props.disabled} />
