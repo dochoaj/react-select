@@ -884,11 +884,13 @@ var Select = React.createClass({
 			}
 		}
 
+		const { minWidth, ...inputProperties } = inputProps;
+
 		if (!this.props.disabled) {
 			if (this.props.searchable) {
-				input = <Input value={this.state.inputValue} onChange={this.handleInputChange} {...inputProps} />;
+				input = <Input value={this.state.inputValue} onChange={this.handleInputChange} {...inputProperties} />;
 			} else {
-				input = <div {...inputProps}>&nbsp;</div>;
+				input = <div {...inputProperties}>&nbsp;</div>;
 			}
 		} else if (!this.props.multi || !this.state.values.length) {
 			input = <div className="Select-input">&nbsp;</div>;
