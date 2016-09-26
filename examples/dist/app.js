@@ -2203,12 +2203,7 @@ var Gravatar = function (_React$Component) {
   _createClass(Gravatar, [{
     key: 'render',
     value: function render() {
-      var base = void 0;
-      if (this.props.https) {
-        base = 'https://secure.gravatar.com/avatar/';
-      } else {
-        base = 'http://www.gravatar.com/avatar/';
-      }
+      var base = '//www.gravatar.com/avatar/';
 
       var query = _queryString2.default.stringify({
         s: this.props.size,
@@ -2301,7 +2296,6 @@ Gravatar.propTypes = {
 Gravatar.defaultProps = {
   size: 50,
   rating: 'g',
-  https: false,
   default: 'retro'
 };
 
