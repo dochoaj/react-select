@@ -569,8 +569,8 @@ var _classnames = require('classnames');
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var Option = _react2['default'].createClass({
-	displayName: 'Option',
+var SelectOption = _react2['default'].createClass({
+	displayName: 'SelectOption',
 
 	propTypes: {
 		children: _react2['default'].PropTypes.node,
@@ -667,7 +667,7 @@ var Option = _react2['default'].createClass({
 	}
 });
 
-exports['default'] = Option;
+exports['default'] = SelectOption;
 module.exports = exports['default'];
 
 },{"classnames":undefined,"react":undefined}],5:[function(require,module,exports){
@@ -1006,9 +1006,9 @@ var _Creatable = require('./Creatable');
 
 var _Creatable2 = _interopRequireDefault(_Creatable);
 
-var _Option = require('./Option');
+var _SelectOption = require('./SelectOption');
 
-var _Option2 = _interopRequireDefault(_Option);
+var _SelectOption2 = _interopRequireDefault(_SelectOption);
 
 var _Value = require('./Value');
 
@@ -1136,7 +1136,7 @@ var Select = _react2['default'].createClass({
 			onBlurResetsInput: true,
 			onCloseResetsInput: true,
 			openAfterFocus: false,
-			optionComponent: _Option2['default'],
+			optionComponent: _SelectOption2['default'],
 			pageSize: 5,
 			placeholder: 'Select...',
 			required: false,
@@ -2134,4 +2134,4 @@ var Select = _react2['default'].createClass({
 exports['default'] = Select;
 module.exports = exports['default'];
 
-},{"./Async":1,"./AsyncCreatable":2,"./Creatable":3,"./Option":4,"./Value":5,"./utils/defaultArrowRenderer":6,"./utils/defaultFilterOptions":7,"./utils/defaultMenuRenderer":8,"classnames":undefined,"react":undefined,"react-dom":undefined,"react-input-autosize":undefined}]},{},[]);
+},{"./Async":1,"./AsyncCreatable":2,"./Creatable":3,"./SelectOption":4,"./Value":5,"./utils/defaultArrowRenderer":6,"./utils/defaultFilterOptions":7,"./utils/defaultMenuRenderer":8,"classnames":undefined,"react":undefined,"react-dom":undefined,"react-input-autosize":undefined}]},{},[]);
